@@ -1,0 +1,14 @@
+/* .header-container{
+    display: felx;
+    justify-content: flex-start;
+    color: white;
+} */
+ body{
+    background-color: color-mix(in srgb, rgb(255, 136, 0), white 30%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .header-container{
+    display: flex;
+    margin: 1em;
+    color:white;
+ }
