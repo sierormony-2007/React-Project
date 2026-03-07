@@ -4,8 +4,9 @@ import Body from './components/Body'
 function App() {
 
   return (
-    <Header>
-    </Header>
+    <>
+     <h1 className='text-amber-800'>Welcome to My App</h1>
+    </>
   )
 }
 
