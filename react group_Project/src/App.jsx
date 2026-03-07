@@ -1,11 +1,12 @@
 import './App.css'
 import Header from './components/Header'
 import Body from './components/Body'
+import Top from './components/Top'
 function App() {
 
   return (
     <>
-    <Header></Header>
+    <Top></Top>
     </>
   )
 }
