@@ -3,7 +3,7 @@ import { Link, Outlet } from 'react-router-dom'
 
 function Rootlayout() {
   return (
-    <div>
+    <div className=''>
       <Link to="/">Top</Link> |
       <Link to="/news">News</Link> |
       <Link to="/episode">Episode</Link> |
