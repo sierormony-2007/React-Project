@@ -2,7 +2,7 @@ import React from 'react'
 
 function Episode() {
   return (
-    <div>Episode</div>
+    <div>Episode </div>
   )
 }
 
