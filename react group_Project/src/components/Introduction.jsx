@@ -3,7 +3,6 @@ import Header from './Header'
 function Introduction() {
   return (
     <>
-    <Head></Head>
     <div>Introduction</div>
     </>
   )
