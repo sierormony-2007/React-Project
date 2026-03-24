@@ -9,7 +9,21 @@ import Rootlayout from './Layouts/Rootlayout'
 
 function App() {
   return (
-    <Top></Top>
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Rootlayout />}>
+          <Route index element={<Top />} />
+          <Route path="news" element={<News />} />
+          <Route path="episode" element={<Episode />} />
+          <Route path="introduction" element={<Introduction />} />
+          <Route path="movie" element={<Movie />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
+    </>
+    
   );
 }
 
