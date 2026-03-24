@@ -1,17 +1,18 @@
 // import React from 'react'
 import Header from './Header';
 import './../componets_CSS/Top.css'
-
+import logo from '../assets/logo.svg'
 import pink from '../assets/pink.jpg'
-
+import oggy from '../assets/oggy1.png'
+import bug from '../assets/bug.png'
 
 function Top() {
   return (
     <>
       <main>
-        <div className='image'>
+        {/* <div className='image'>
           <img src="https://static-media.fox.com/fmc/prod/fts/artwork/VX-15115006/e5gbs24shff0agug.jpg" alt="" />
-        </div>
+        </div> */}
         <div className='container'>
           <div className='slide_wrapper'>
             <div className='slider'>
@@ -26,9 +27,32 @@ function Top() {
               </div>
             </div>
           </div>
-
         </div>
-        <div className='p-news p-section is-scroll-active' data-scroll-effect>
+        <div className='mid'>
+          <div className='mid-container'>
+            <div className='mid-wrapper'>
+              <div className='mid-img-area'>
+                <img src={oggy} alt="" />
+              </div>
+              <div className='mid-content-area'>
+                <h1><img src={logo} alt="" /></h1>
+                <div className='mid-description'>
+                  <p>
+                    Kiddiz is the funny and unexpected 
+                    brand that stands out from the pack in a way 
+                    in which kids can relate. Our cartoon-crammed 
+                    network delivers hilarious comedy, unexpected 
+                    surprises and edge-of-your-seat action through
+                    the best in animated series and hit blockbuster
+                    movies. Kiddiz is where anything is possible,
+                    where fun and adventure lives–all day, every day.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className='p-news p-section is-scroll-active' data-scroll-effect>
           <div className='p-news__inner'>
             <div className='p-news__header'>
 
@@ -50,10 +74,8 @@ function Top() {
                 <li></li>
               </ul>
             </div>
-
           </div>
-
-        </div>
+        </div> */}
       </main>
 
     </>
