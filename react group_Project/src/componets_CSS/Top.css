@@ -1,17 +1,64 @@
+@media (min-width: 64rem){
+    .slide-wrapper{
+        height: 450px;
+    }
+}
+.slide-wrapper{
+    overflow: hidden;
+}
+.container, .slide-wrapper{
+    margin: 0 auto;
+    max-width: calc();
+}
 .container{
-    background-color: #0693e3;
+    touch-action: pan-y;
+}
+.slider{
+    display: flex;
+    transition: 5s ease-in-out;
+}
+.slide{
+    background-color: #02a6d6;
+    /* background-color: black; */
     padding-top: 80px;
     display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    min-width: 100%;
 }
+@media (min-width: 64rem){
+    .slide{
+        display: block;
+    }
+}
+
 .sub_heading{
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 1.25rem;
     text-align: left;
     width: 100%;
 }
+@media (min-width: 64rem){
+    .sub_heading{
+        align-content: center;
+        display: grid;
+        width: 23rem;
+        height: 100%;
+        left: 5%;
+        position: absolute;
+        padding-left: .5rem;
+    }
+}
 @media (min-width: 48rem){
     .sub{
         margin-bottom: .95rem;
+    }
+}
+@media (min-width: 64rem){
+    .sub{
+        letter-spacing: .0125rem;
+        margin-top: unset;
     }
 }
 .sub{
@@ -22,15 +69,106 @@
     margin-bottom:.7rem;
     margin-top: .625rem;
 }
-img{
+@media (min-width: 64rem) and (max-width: 85.312rem){
+    .heading{
+        font-size: 2.25rem;
+        line-height: 1.29;
+    }
+}
+@media (min-width: 48rem){
+    .heading{
+        font-size: 2.25rem;
+        font-weight: 700;
+        letter-spacing: .031rem;
+        line-height: 1.22;
+    }
+}
+.heading{
+    font-style: 1.87rem;
+    font-weight: 700;
+    letter-spacing: .031rem;
+    line-height: 1.33;
+    margin-bottom: 1.2rem;
+    margin-top: 0;
+    text-transform: inherit;
+}
+/* img{
     position:relative;
     width: 100%;
-}
+} */
 .pink{
-    width: 50%;
+    width: 100%;
+    height: 16rem;
+}
+@media (min-width: 36rem){
+    .pink{
+        float: right;
+        height: 512px;
+    }
+}
+@media(min-width: 64rem){
+    .pink{
+        width: 42rem;
+    }
+}
+.mid{
+    display: flex;
+    padding: 3rem 0 2.5rem;
+    background-color: #1a1a1a;
 }
 
-.p-news {
+.mid-container{
+    margin: 0 auto;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    width: 100%;
+}
+@media (min-width:48rem){
+    .mid-wrapper{
+        flex-direction: row;
+        padding: 1.25rem;
+    }
+}
+.mid-wrapper{
+    align-items: center;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+}
+.mid-img-area{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.mid-content-area{
+    flex:2;
+}
+.mid-description{
+    color: white;
+    border-left: none;
+    padding-left: 0;
+}
+.mid-description p{
+    font-size:1rem ;
+    letter-spacing: .0125rem;
+    line-height: 1.5;
+}
+p{
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: .019rem;
+    line-height: 1.75rem;
+    font-family: proxima-nova, sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+/* .p-news {
     padding-bottom: 55px;
     background-color: #ee2b4d;
 }
@@ -126,13 +264,6 @@ img{
     }
 }
 
-.global {
-    width: 20px;
-}
-
-.loc {
-    width: 20px;
-}
 
 .p-news__header-title-nav {
     display: flex;
@@ -150,7 +281,7 @@ img{
 
 .p-news__header-title-item {
     /* width: 340px; */
-    margin: 0 7px;
+    /* margin: 0 7px;
 
 }
 
@@ -159,7 +290,7 @@ img{
         width: 46%;
         margin: 0 1.4%;
     }
-}
+} */
 
 /* .p-news__header-nav-item.--global .p-news__header-nav-item-link {
   background-color: orange;
@@ -167,7 +298,7 @@ img{
 .p-news__header-nav-item.--global .p-news__header-nav-item-link .p-in-text {
   color: white;
 } */
-.p-news__header-nav-item-link {
+/* .p-news__header-nav-item-link {
     display: block;
     width: 100%;
     padding: 5px 0;
@@ -186,4 +317,4 @@ img{
     .p-news__header-nav-item-link .p-in-text {
         font-size: 2rem;
     }
-}
+} */ 
